@@ -89,50 +89,109 @@
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
-        <!--PhotoGram-->
-        <scene sceneID="BHw-cW-bC7">
+        <!--Friends-->
+        <scene sceneID="rIH-LQ-hce">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CS8-ZW-w5e" customClass="PhotosViewController" customModule="photogram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Wlr-0s-HOX" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QvL-pq-Emz"/>
-                        <viewControllerLayoutGuide type="bottom" id="iJ1-Tx-4UN"/>
+                        <viewControllerLayoutGuide type="top" id="4S0-Pd-xlI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mmc-Km-nX6"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="myK-ya-hlE">
+                    <view key="view" contentMode="scaleToFill" id="c9Z-dg-Pkf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wa3-L8-A7y">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wa3-L8-A7y" firstAttribute="top" secondItem="4S0-Pd-xlI" secondAttribute="bottom" id="Nug-XM-Ptk"/>
+                            <constraint firstAttribute="trailing" secondItem="Wa3-L8-A7y" secondAttribute="trailing" id="PeM-Bx-gtD"/>
+                            <constraint firstItem="Mmc-Km-nX6" firstAttribute="top" secondItem="Wa3-L8-A7y" secondAttribute="bottom" id="sTK-fD-Gjs"/>
+                            <constraint firstItem="Wa3-L8-A7y" firstAttribute="leading" secondItem="c9Z-dg-Pkf" secondAttribute="leading" id="yOO-jL-RsX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friends" id="EAW-tn-9sC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ywx-cb-GMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448.8000000000002" y="443.92803598200902"/>
+        </scene>
+        <!--Add Photo-->
+        <scene sceneID="dVJ-vY-FHb">
+            <objects>
+                <viewController id="eKu-OP-14r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Z9-YO-EOH"/>
+                        <viewControllerLayoutGuide type="bottom" id="oPY-ew-169"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0YS-KB-siX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Photo" id="Uq0-T9-gy9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCR-hx-OLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="893"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="K2W-RE-tSc">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="OdC-da-lNr" customClass="PhotosViewController" customModule="photogram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbv-1p-HmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="948-dx-wNl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p5o-SZ-fFM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LXv-bP-MBa">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="CS8-ZW-w5e" id="mIr-BD-0Og"/>
-                                    <outlet property="delegate" destination="CS8-ZW-w5e" id="Ish-jB-d0J"/>
+                                    <outlet property="dataSource" destination="OdC-da-lNr" id="ipe-3E-RTA"/>
+                                    <outlet property="delegate" destination="OdC-da-lNr" id="1bS-I9-kVh"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.015793653809999999" green="0.0" blue="0.03713911802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LXv-bP-MBa" secondAttribute="trailing" id="7Sp-ml-ozL"/>
-                            <constraint firstItem="LXv-bP-MBa" firstAttribute="top" secondItem="QvL-pq-Emz" secondAttribute="bottom" id="GXb-yi-WyG"/>
-                            <constraint firstItem="iJ1-Tx-4UN" firstAttribute="top" secondItem="LXv-bP-MBa" secondAttribute="bottom" id="m8O-UU-6AE"/>
-                            <constraint firstItem="LXv-bP-MBa" firstAttribute="leading" secondItem="myK-ya-hlE" secondAttribute="leading" id="sLO-5b-p3M"/>
+                            <constraint firstItem="LXv-bP-MBa" firstAttribute="leading" secondItem="p5o-SZ-fFM" secondAttribute="leading" id="4PK-fp-0Cs"/>
+                            <constraint firstItem="948-dx-wNl" firstAttribute="top" secondItem="LXv-bP-MBa" secondAttribute="bottom" id="MU0-tJ-gcK"/>
+                            <constraint firstAttribute="trailing" secondItem="LXv-bP-MBa" secondAttribute="trailing" id="VBy-E3-Dte"/>
+                            <constraint firstItem="LXv-bP-MBa" firstAttribute="top" secondItem="dbv-1p-HmG" secondAttribute="bottom" id="yKz-0B-N02"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="PhotoGram" id="qfH-ca-DK9">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="g5B-lv-3jO">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="logoutPressed:" destination="CS8-ZW-w5e" id="2vL-On-p8t"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="4pb-bE-N0V">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Feed" id="0v1-GH-VE9"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F0y-lC-LU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fex-fK-252" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2448.8000000000002" y="-211.84407796101951"/>
+        </scene>
+        <!--PhotoGram-->
+        <scene sceneID="k1P-1U-sQC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nuH-wz-srJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="PhotoGram" id="cKX-jO-C8V"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OLb-kK-f2P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OdC-da-lNr" kind="relationship" relationship="viewControllers" id="Uhc-MT-Tae"/>
+                        <segue destination="Wlr-0s-HOX" kind="relationship" relationship="viewControllers" id="9cc-lj-LlA"/>
+                        <segue destination="eKu-OP-14r" kind="relationship" relationship="viewControllers" id="jHe-gy-1bk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZX-sv-VmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6hl-2x-gPV">
@@ -146,7 +205,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="CS8-ZW-w5e" kind="relationship" relationship="rootViewController" id="grI-oZ-CU8"/>
+                        <segue destination="nuH-wz-srJ" kind="relationship" relationship="rootViewController" id="1HT-Kc-Wv6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="712-nn-wsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,4 +213,5 @@
             <point key="canvasLocation" x="653.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
