@@ -15,6 +15,8 @@
 		E0ED83C41EDA723F00CF7374 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83C31EDA723F00CF7374 /* LoginViewController.swift */; };
 		E0ED83C61EDA724C00CF7374 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83C51EDA724C00CF7374 /* PhotosViewController.swift */; };
 		E0ED83C81EDA727D00CF7374 /* NewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83C71EDA727D00CF7374 /* NewPhotoViewController.swift */; };
+		E0ED83CA1EDA8D3B00CF7374 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83C91EDA8D3B00CF7374 /* Post.swift */; };
+		E0ED83CC1EDA8D4200CF7374 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83CB1EDA8D4200CF7374 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E0ED83C31EDA723F00CF7374 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E0ED83C51EDA724C00CF7374 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		E0ED83C71EDA727D00CF7374 /* NewPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPhotoViewController.swift; sourceTree = "<group>"; };
+		E0ED83C91EDA8D3B00CF7374 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E0ED83CB1EDA8D4200CF7374 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		E0ED83C21EDA722C00CF7374 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0ED83C91EDA8D3B00CF7374 /* Post.swift */,
+				E0ED83CB1EDA8D4200CF7374 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 				E0ED83C41EDA723F00CF7374 /* LoginViewController.swift in Sources */,
 				E0ED83C61EDA724C00CF7374 /* PhotosViewController.swift in Sources */,
 				E0ED83B21EDA721200CF7374 /* ViewController.swift in Sources */,
+				E0ED83CA1EDA8D3B00CF7374 /* Post.swift in Sources */,
 				E0ED83C81EDA727D00CF7374 /* NewPhotoViewController.swift in Sources */,
 				E0ED83B01EDA721200CF7374 /* AppDelegate.swift in Sources */,
+				E0ED83CC1EDA8D4200CF7374 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
