@@ -123,7 +123,7 @@
         <!--Add Photo-->
         <scene sceneID="dVJ-vY-FHb">
             <objects>
-                <viewController id="eKu-OP-14r" sceneMemberID="viewController">
+                <viewController id="eKu-OP-14r" customClass="NewPhotoViewController" customModule="photogram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Z9-YO-EOH"/>
                         <viewControllerLayoutGuide type="bottom" id="oPY-ew-169"/>
@@ -131,13 +131,50 @@
                     <view key="view" contentMode="scaleToFill" id="0YS-KB-siX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-Ea-fDy">
+                                <rect key="frame" x="33" y="92" width="308" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="308" id="BJl-pN-nts"/>
+                                    <constraint firstAttribute="height" constant="262" id="Uk8-wz-YaT"/>
+                                    <constraint firstAttribute="width" constant="308" id="gTN-NI-RTa"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ne-dm-Ys7">
+                                <rect key="frame" x="33" y="373" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-dm-29k">
+                                <rect key="frame" x="172" y="424" width="31" height="30"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postPressed:" destination="eKu-OP-14r" eventType="touchUpInside" id="RjM-aQ-mlH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIJ-Ea-fDy" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="3CX-bM-nfo"/>
+                            <constraint firstItem="vv1-dm-29k" firstAttribute="top" secondItem="7Ne-dm-Ys7" secondAttribute="bottom" constant="21" id="5bh-EY-aIt"/>
+                            <constraint firstItem="yIJ-Ea-fDy" firstAttribute="top" secondItem="2Z9-YO-EOH" secondAttribute="bottom" constant="28" id="6Nu-CT-G0p"/>
+                            <constraint firstItem="vv1-dm-29k" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="Xsg-18-KUq"/>
+                            <constraint firstItem="7Ne-dm-Ys7" firstAttribute="width" secondItem="yIJ-Ea-fDy" secondAttribute="width" id="Z72-vg-rbH"/>
+                            <constraint firstItem="7Ne-dm-Ys7" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="fmI-d0-ED9"/>
+                            <constraint firstItem="7Ne-dm-Ys7" firstAttribute="top" secondItem="yIJ-Ea-fDy" secondAttribute="bottom" constant="19" id="iKh-uK-SB2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Photo" id="Uq0-T9-gy9"/>
+                    <connections>
+                        <outlet property="imageDescriptionTextField" destination="7Ne-dm-Ys7" id="u3M-h2-e5f"/>
+                        <outlet property="imageView" destination="yIJ-Ea-fDy" id="E5n-Gk-Ddz"/>
+                        <outlet property="postButton" destination="vv1-dm-29k" id="7xy-SJ-IB8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCR-hx-OLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702" y="893"/>
+            <point key="canvasLocation" x="1701.5999999999999" y="892.80359820089961"/>
         </scene>
         <!--Feed-->
         <scene sceneID="K2W-RE-tSc">
