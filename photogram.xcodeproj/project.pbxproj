@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71D55EB2A61920340C10F2A6 /* Pods_photogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9CC37A9169B3CE3A34BA10 /* Pods_photogram.framework */; };
+		E025371E1EDD21C9004D49E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */; };
 		E0ED83B01EDA721200CF7374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83AF1EDA721200CF7374 /* AppDelegate.swift */; };
 		E0ED83B21EDA721200CF7374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83B11EDA721200CF7374 /* ViewController.swift */; };
 		E0ED83B51EDA721200CF7374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ED83B31EDA721200CF7374 /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21409D77C0C6D3E6F42BADD8 /* Pods-photogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photogram.release.xcconfig"; path = "Pods/Target Support Files/Pods-photogram/Pods-photogram.release.xcconfig"; sourceTree = "<group>"; };
+		67E7B78C84B8EAD95B763587 /* Pods-photogram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photogram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photogram/Pods-photogram.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9CC37A9169B3CE3A34BA10 /* Pods_photogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0ED83AC1EDA721200CF7374 /* photogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0ED83AF1EDA721200CF7374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0ED83B11EDA721200CF7374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D55EB2A61920340C10F2A6 /* Pods_photogram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B160639F398906AE8DE443A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67E7B78C84B8EAD95B763587 /* Pods-photogram.debug.xcconfig */,
+				21409D77C0C6D3E6F42BADD8 /* Pods-photogram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9A20958DFE947E8DBBA0F87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9CC37A9169B3CE3A34BA10 /* Pods_photogram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0ED83A31EDA721200CF7374 = {
 			isa = PBXGroup;
 			children = (
 				E0ED83AE1EDA721200CF7374 /* photogram */,
 				E0ED83AD1EDA721200CF7374 /* Products */,
+				B160639F398906AE8DE443A8 /* Pods */,
+				B9A20958DFE947E8DBBA0F87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +90,7 @@
 		E0ED83AE1EDA721200CF7374 /* photogram */ = {
 			isa = PBXGroup;
 			children = (
+				E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */,
 				E0ED83C21EDA722C00CF7374 /* Model */,
 				E0ED83C11EDA722100CF7374 /* Controllers */,
 				E0ED83AF1EDA721200CF7374 /* AppDelegate.swift */,
@@ -102,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0ED83BE1EDA721200CF7374 /* Build configuration list for PBXNativeTarget "photogram" */;
 			buildPhases = (
+				5C17F15329A285765CCC161C /* [CP] Check Pods Manifest.lock */,
 				E0ED83A81EDA721200CF7374 /* Sources */,
 				E0ED83A91EDA721200CF7374 /* Frameworks */,
 				E0ED83AA1EDA721200CF7374 /* Resources */,
+				4DA0E5BFA18C942F464FB063 /* [CP] Embed Pods Frameworks */,
+				9060F891D13E3302F1CC80B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,12 +186,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ED83BA1EDA721200CF7374 /* LaunchScreen.storyboard in Resources */,
+				E025371E1EDD21C9004D49E9 /* GoogleService-Info.plist in Resources */,
 				E0ED83B71EDA721200CF7374 /* Assets.xcassets in Resources */,
 				E0ED83B51EDA721200CF7374 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DA0E5BFA18C942F464FB063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photogram/Pods-photogram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C17F15329A285765CCC161C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9060F891D13E3302F1CC80B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photogram/Pods-photogram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0ED83A81EDA721200CF7374 /* Sources */ = {
@@ -297,6 +376,7 @@
 		};
 		E0ED83BF1EDA721200CF7374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E7B78C84B8EAD95B763587 /* Pods-photogram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LMMQL6UH2F;
@@ -310,6 +390,7 @@
 		};
 		E0ED83C01EDA721200CF7374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21409D77C0C6D3E6F42BADD8 /* Pods-photogram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LMMQL6UH2F;
@@ -340,6 +421,7 @@
 				E0ED83C01EDA721200CF7374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
