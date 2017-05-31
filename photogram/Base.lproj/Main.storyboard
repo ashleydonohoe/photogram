@@ -134,7 +134,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-Ea-fDy">
-                                <rect key="frame" x="33" y="92" width="308" height="262"/>
+                                <rect key="frame" x="33" y="118" width="308" height="262"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="308" id="BJl-pN-nts"/>
                                     <constraint firstAttribute="height" constant="262" id="Uk8-wz-YaT"/>
@@ -142,16 +143,30 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ne-dm-Ys7">
-                                <rect key="frame" x="33" y="373" width="308" height="30"/>
+                                <rect key="frame" x="33" y="399" width="308" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-dm-29k">
-                                <rect key="frame" x="172" y="424" width="31" height="30"/>
+                                <rect key="frame" x="172" y="450" width="31" height="30"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="postPressed:" destination="eKu-OP-14r" eventType="touchUpInside" id="RjM-aQ-mlH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-fS-zhe">
+                                <rect key="frame" x="15" y="43" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="eKu-OP-14r" eventType="touchUpInside" id="sXm-iM-TOk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ved-h9-EJB">
+                                <rect key="frame" x="284" y="43" width="75" height="30"/>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="eKu-OP-14r" eventType="touchUpInside" id="oJA-DT-5r7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,11 +174,15 @@
                         <constraints>
                             <constraint firstItem="yIJ-Ea-fDy" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="3CX-bM-nfo"/>
                             <constraint firstItem="vv1-dm-29k" firstAttribute="top" secondItem="7Ne-dm-Ys7" secondAttribute="bottom" constant="21" id="5bh-EY-aIt"/>
-                            <constraint firstItem="yIJ-Ea-fDy" firstAttribute="top" secondItem="2Z9-YO-EOH" secondAttribute="bottom" constant="28" id="6Nu-CT-G0p"/>
+                            <constraint firstItem="yIJ-Ea-fDy" firstAttribute="top" secondItem="2Z9-YO-EOH" secondAttribute="bottom" constant="98" id="6Nu-CT-G0p"/>
+                            <constraint firstItem="e9v-fS-zhe" firstAttribute="leading" secondItem="0YS-KB-siX" secondAttribute="leadingMargin" constant="-1" id="BJv-Aa-5ra"/>
                             <constraint firstItem="vv1-dm-29k" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="Xsg-18-KUq"/>
                             <constraint firstItem="7Ne-dm-Ys7" firstAttribute="width" secondItem="yIJ-Ea-fDy" secondAttribute="width" id="Z72-vg-rbH"/>
+                            <constraint firstItem="e9v-fS-zhe" firstAttribute="top" secondItem="2Z9-YO-EOH" secondAttribute="bottom" constant="23" id="aFk-1X-ktt"/>
+                            <constraint firstItem="yIJ-Ea-fDy" firstAttribute="top" secondItem="Ved-h9-EJB" secondAttribute="bottom" constant="45" id="fY1-SJ-VFH"/>
                             <constraint firstItem="7Ne-dm-Ys7" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" id="fmI-d0-ED9"/>
                             <constraint firstItem="7Ne-dm-Ys7" firstAttribute="top" secondItem="yIJ-Ea-fDy" secondAttribute="bottom" constant="19" id="iKh-uK-SB2"/>
+                            <constraint firstItem="Ved-h9-EJB" firstAttribute="centerX" secondItem="0YS-KB-siX" secondAttribute="centerX" constant="134" id="lA4-Il-0hF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Photo" id="Uq0-T9-gy9"/>
@@ -237,6 +256,11 @@
                                                 <constraint firstItem="FCk-6i-laj" firstAttribute="centerX" secondItem="jHK-G2-eW1" secondAttribute="centerX" id="w5S-xs-Jcs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="PA7-9N-Rxf" id="DHB-bf-dNH"/>
+                                            <outlet property="postImageView" destination="FCk-6i-laj" id="y4P-Xx-sNz"/>
+                                            <outlet property="posterNameLabel" destination="RAF-gb-5Qh" id="PfN-VD-6IR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -247,6 +271,9 @@
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="0v1-GH-VE9"/>
+                    <connections>
+                        <segue destination="eKu-OP-14r" kind="presentation" identifier="pickImageSegue" id="0vk-V4-2gq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fex-fK-252" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +292,6 @@
                     <connections>
                         <segue destination="OdC-da-lNr" kind="relationship" relationship="viewControllers" id="Uhc-MT-Tae"/>
                         <segue destination="Wlr-0s-HOX" kind="relationship" relationship="viewControllers" id="9cc-lj-LlA"/>
-                        <segue destination="eKu-OP-14r" kind="relationship" relationship="viewControllers" id="jHe-gy-1bk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZX-sv-VmR" userLabel="First Responder" sceneMemberID="firstResponder"/>

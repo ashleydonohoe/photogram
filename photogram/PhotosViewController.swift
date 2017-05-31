@@ -31,6 +31,7 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBAction func addPhotoPressed(_ sender: Any) {
         print("Add photo")
+        performSegue(withIdentifier: "pickImageSegue", sender: nil)
     }
     
     

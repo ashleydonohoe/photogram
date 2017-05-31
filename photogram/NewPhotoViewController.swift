@@ -23,9 +23,12 @@ class NewPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         
         // Will eventually allow editing
         imagePicker.allowsEditing = false
-        
+    }
+    
+    @IBAction func pickImage(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
     }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -40,5 +43,8 @@ class NewPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         
         // Add imageURL and description to database
         
+    }
+    @IBAction func cancelPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }
