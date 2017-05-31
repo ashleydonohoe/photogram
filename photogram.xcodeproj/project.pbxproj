@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		71D55EB2A61920340C10F2A6 /* Pods_photogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9CC37A9169B3CE3A34BA10 /* Pods_photogram.framework */; };
 		E025371E1EDD21C9004D49E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */; };
+		E052C7851EDE727B008A8511 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E052C7841EDE727B008A8511 /* ItemTableViewCell.swift */; };
+		E052C7871EDE7394008A8511 /* emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = E052C7861EDE7394008A8511 /* emoji.png */; };
 		E0ED83B01EDA721200CF7374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83AF1EDA721200CF7374 /* AppDelegate.swift */; };
 		E0ED83B21EDA721200CF7374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ED83B11EDA721200CF7374 /* ViewController.swift */; };
 		E0ED83B51EDA721200CF7374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ED83B31EDA721200CF7374 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		67E7B78C84B8EAD95B763587 /* Pods-photogram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photogram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photogram/Pods-photogram.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9CC37A9169B3CE3A34BA10 /* Pods_photogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E052C7841EDE727B008A8511 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemTableViewCell.swift; path = ../ItemTableViewCell.swift; sourceTree = "<group>"; };
+		E052C7861EDE7394008A8511 /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
 		E0ED83AC1EDA721200CF7374 /* photogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0ED83AF1EDA721200CF7374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0ED83B11EDA721200CF7374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		E0ED83AE1EDA721200CF7374 /* photogram */ = {
 			isa = PBXGroup;
 			children = (
+				E052C7861EDE7394008A8511 /* emoji.png */,
+				E052C7841EDE727B008A8511 /* ItemTableViewCell.swift */,
 				E025371D1EDD21C9004D49E9 /* GoogleService-Info.plist */,
 				E0ED83C21EDA722C00CF7374 /* Model */,
 				E0ED83C11EDA722100CF7374 /* Controllers */,
@@ -189,6 +195,7 @@
 				E025371E1EDD21C9004D49E9 /* GoogleService-Info.plist in Resources */,
 				E0ED83B71EDA721200CF7374 /* Assets.xcassets in Resources */,
 				E0ED83B51EDA721200CF7374 /* Main.storyboard in Resources */,
+				E052C7871EDE7394008A8511 /* emoji.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 				E0ED83C61EDA724C00CF7374 /* PhotosViewController.swift in Sources */,
 				E0ED83B21EDA721200CF7374 /* ViewController.swift in Sources */,
 				E0ED83CA1EDA8D3B00CF7374 /* Post.swift in Sources */,
+				E052C7851EDE727B008A8511 /* ItemTableViewCell.swift in Sources */,
 				E0ED83C81EDA727D00CF7374 /* NewPhotoViewController.swift in Sources */,
 				E0ED83B01EDA721200CF7374 /* AppDelegate.swift in Sources */,
 				E0ED83CC1EDA8D4200CF7374 /* User.swift in Sources */,

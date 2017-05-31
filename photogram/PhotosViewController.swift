@@ -33,12 +33,13 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         print("Add photo")
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as UITableViewCell
         return cell
     }
 }
